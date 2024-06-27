@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #003876;
+    --white-color: #ffffff;
+}
+
+.inner {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 100px 0;
+}
+
+.default .inner {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.default .tit {
+    max-width: 1290px;
+    margin: 0 auto 40px auto;
+}
+
+.default .tit h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: center;
+}
