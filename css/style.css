@@ -322,10 +322,12 @@
         top: 0;
         left: -9px;
         height: 60px;
+        color: #000;
     }
 
     .main_banner .inner .arrows i {
         font-size: 32px;
+        color: #000;
     }
 }
 
@@ -578,6 +580,7 @@
         max-width: 182px;
         width: 100%;
         padding: 0;
+        color: #000;
     }
 
     .main_notice .inner .left .notice_content>ul>li {
