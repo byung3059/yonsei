@@ -1,5 +1,51 @@
 $(function () {
 
+    $('.header .mbtn').on('click', function () {
+        $('.header .gnb').toggleClass('on')
+    })
+
+    $('.header .inner .gnb li button').on('click', function () {
+        $('.header .inner .gnb li button').toggleClass('on')
+    })
+
+    const main_banner_slide = new Swiper('.banner_slide', {
+        loop: true,
+        slidesPerView: 2,
+        breakpoints: {
+            768: {
+                slidesPerView: 5,
+            }
+        }
+    })
+
+    $('.main_banner .inner .arrows .prev').on('click', function () {
+        main_banner_slide.slidePrev(400);
+    });
+    $('.main_banner .inner .arrows .next').on('click', function () {
+        main_banner_slide.slideNext(400);
+    });
+
+
+    const main_calendar_slide = new Swiper('.calendar_slide', {
+        loop: true,
+        slidesPerView: 2,
+        breakpoints: {
+            768: {
+                slidesPerView: 5,
+            }
+        }
+    })
+
+    $('.main_calendar .inner .arrows .prev').on('click', function () {
+        main_calendar_slide.slidePrev(400);
+    });
+    $('.main_calendar .inner .arrows .next').on('click', function () {
+        main_calendar_slide.slideNext(400);
+    });
+
+
+
+
     $('.main_notice .tap_menu button').on('click', function () {
         let idx = $(this).parent().index();
         $('.main_notice .inner .left .notice_content>ul')
