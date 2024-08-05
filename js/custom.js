@@ -4,15 +4,50 @@ $(function () {
         $('.header .gnb').toggleClass('on')
     })
 
-    $('.header .inner .gnb li button').on('click', function () {
-        $('.header .inner .gnb li button').toggleClass('on')
+    $('.header .inner .gnb>ul>li>a').on('click', function (e) {
+        $(this).parent().siblings().find('.sub').stop().slideUp();   // 메뉴 클릭하면 하나만 나오게
+
+        if ($('.header .inner .gnb').hasClass('on')) {
+            e.preventDefault(); // a링크 이벤트 없애기
+
+            $(this).next().stop().slideToggle();
+        }
     })
+
+    $('.header .inner .gnb .sub>ul>li>a').on('click', function (e) {
+        $(this).parent().siblings().find('.smenu').stop().slideUp();   // 메뉴 클릭하면 하나만 나오게
+
+
+        if ($('.header .inner .gnb').hasClass('on')) {
+            e.preventDefault(); // a링크 이벤트 없애기
+
+            $(this).next().stop().slideToggle();
+        } else ($('.header .gnb .sub').removeAttr('style'));
+
+    })
+
+    $('.header .inner .gnb .smenu>li>a').on('click', function (e) {
+
+        e.preventDefault();
+    })
+
+    $(window).on('resize', function () {
+        $('.header .gnb').removeClass('on');
+        $('.header .mbtn').removeClass('on');
+        $('.header .gnb>ul>li ul').removeAttr('style');
+        $('.header .gnb .sub').removeAttr('style');
+    })
+
 
     const main_banner_slide = new Swiper('.banner_slide', {
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
         breakpoints: {
-            768: {
+            600: {
+                slidesPerView: 2,
+            },
+
+            769: {
                 slidesPerView: 5,
             }
         }
@@ -28,12 +63,16 @@ $(function () {
 
     const main_calendar_slide = new Swiper('.calendar_slide', {
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
         breakpoints: {
-            768: {
+
+            600: {
+                slidesPerView: 2,
+            },
+            769: {
                 slidesPerView: 5,
             }
-        }
+        },
     })
 
     $('.main_calendar .inner .arrows .prev').on('click', function () {
@@ -63,18 +102,14 @@ $(function () {
 
         loop: true,
 
-        effect: 'fade',
-        fadeEffect: { crossFade: true, },
+        slidesPerView: 2,
+        spaceBetween: 30,
 
-        on: {
-            slideChangeTransitionStart: function () {
-                $('.main_research .inner .main_research_dots li')
-                    .eq(this.realIndex)
-                    .addClass('on')
-                    .siblings()
-                    .removeClass('on')
+        breakpoints: {
+            769: {
+                slidesPerView: 4,
             }
-        }
+        },
     })
 
     $('.main_research_dots li').on('click', function () {
