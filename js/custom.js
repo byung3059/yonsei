@@ -98,24 +98,62 @@ $(function () {
     })
 
 
-    const main_research_slide = new Swiper('.main_research_slide', {
-
+    const main_news_slide = new Swiper('.main_news_slide', {
         loop: true,
+        slidesPerView: 1,
+    })
 
-        slidesPerView: 2,
+    $('.main_news_slide .arrows .prev').on('click', function () {
+        main_news_slide.slidePrev(400);
+    })
+
+    $('.main_news_slide .arrows .next').on('click', function () {
+        main_news_slide.slideNext(400);
+    })
+
+
+    const main_research_slide = new Swiper('.main_research_slide', {
+        loop: true,
+        slidesPerView: 1,
+    })
+
+    $('.main_research_slide .arrows .prev').on('click', function () {
+        main_research_slide.slidePrev(400);
+    })
+
+    $('.main_research_slide .arrows .next').on('click', function () {
+        main_research_slide.slideNext(400);
+    })
+
+    const main_archives_slide = new Swiper('.archives_slide', {
+        loop: true,
+        slidesPerView: 1,
         spaceBetween: 30,
 
         breakpoints: {
             769: {
-                slidesPerView: 4,
+                slidesPerView: 3,
             }
         },
     })
 
-    $('.main_research_dots li').on('click', function () {
-        let idx = $(this).index();
 
-        main_research_slide.slideToLoop(idx, 400);
+
+    // top 버튼 //
+
+
+    $('.to_top button').on('click', function () {
+        $('html, body').animate({ scrollTop: 0, }, 300)
+    });
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+
+        if (sct > 800) {
+            $('.to_top').addClass('on')
+        } else {
+            $('.to_top').removeClass('on')
+        }
     })
 
 });

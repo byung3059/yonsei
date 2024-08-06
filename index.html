@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연세대학교 리뉴얼</title>
+    <title>연세대학교</title>
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
@@ -76,7 +76,6 @@
                                         <li><a href="">나눔활동</a></li>
                                         <li><a href="">학교법인</a></li>
                                         <li><a href="">대학평의원회</a></li>
-                                        <li><a href="">연세대-POSTECH<br />개방·공유캠퍼스</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -115,9 +114,9 @@
                                     <a href="">연구활동</a>
                                     <ul class="smenu">
                                         <li><a href="">연구성과 통계</a></li>
+                                        <li><a href="">연구자 연구정보</a></li>
                                         <li><a href="">연세리서치매거진</a></li>
-                                        <li><a href="">연구자 연구정보(PURE)</a></li>
-                                        <li><a href="">대학원생 연구정보(Y-Scholar Hub)</a></li>
+                                        <li><a href="">대학원생 연구정보</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -344,8 +343,8 @@
                     </div>
 
                     <div class="arrows">
-                        <button class="prev"><i class="xi-angle-left-thin"></i></button>
-                        <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        <button class="prev"><img src="./images/arrow-left.svg" alt="">prev</button>
+                        <button class="next"><img src="./images/arrow-right.svg" alt="">next</button>
                     </div>
                 </div>
 
@@ -492,6 +491,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="right">
                     <div class="tap_wrap">
                         <ul class="menu">
@@ -503,32 +503,25 @@
                             <ul>
                                 <li>
                                     <a href="">2024학년도 2학기 AI융합심화전공 신청 안내</a>
-
                                 </li>
                                 <li>
                                     <a href="">2024학년도 2학기 학부 휴학 및 복학 신청 안내 / Leave & Return Application Guidelines for
                                         Fall semester 2024</a>
-
                                 </li>
                                 <li>
                                     <a href="">2024학년도 2학기 캠퍼스내 연계전공 신청 안내</a>
-
                                 </li>
                                 <li>
                                     <a href="">2024학년도 여름 계절제 폐강 과목 안내(최종)</a>
-
                                 </li>
                                 <li>
                                     <a href="">대학생을 위한 저작권 보호 가이드라인</a>
-
                                 </li>
                                 <li>
                                     <a href="">2024학년도 여름 계절제 수업 안내(학부)</a>
-
                                 </li>
                                 <li>
                                     <a href="">2024학년도 1학기 학생 선택에 따른 S/U(Satisfactory/Unsatisfactory) 평가제도 신청안내</a>
-
                                 </li>
                             </ul>
                         </div>
@@ -537,13 +530,57 @@
             </div>
         </section>
 
-        <section class="main_research default">
+        <section class="main_content default">
             <div class="tit">
-                <h2>Research Story</h2>
+                <h2>Yonsei Now</h2>
             </div>
 
             <div class="inner">
+                <div class="main_news_slide swiper">
+                    <div class="txt_box">
+                        <strong>연세소식</strong>
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide itm itm01">
+                            <div class="img_box">
+                                <a href=""><img src="./images/main_news01.jpg" alt=""></a>
+                            </div>
+
+                            <div class="desc_box">
+                                <p>문주호 교수팀 고성능 태양광 수소 생산 소자 구현</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide itm itm02">
+                            <div class="img_box">
+                                <a href=""><img src="./images/main_news02.jpg" alt=""></a>
+                            </div>
+                            <div class="desc_box">
+                                <p>문주호 교수팀 양자점 기반 원편광 발광 소자 구현</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide itm itm03">
+                            <div class="img_box">
+                                <a href=""><img src="./images/main_news03.jpg" alt=""></a>
+                            </div>
+                            <div class="desc_box">
+                                <p>전혜영 교수팀 성층권 준격년진동 붕괴 원인 규명</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="arrows">
+                        <button class="prev"><img src="./images/arrow-left.svg" alt="">prev</button>
+                        <button class="next"><img src="./images/arrow-right.svg" alt="">next</button>
+                    </div>
+                </div>
+
                 <div class="main_research_slide swiper">
+                    <div class="txt_box">
+                        <strong>연구성과</strong>
+                    </div>
+
                     <div class="swiper-wrapper">
                         <div class="swiper-slide itm itm01">
                             <div class="img_box">
@@ -552,13 +589,7 @@
                             </div>
 
                             <div class="desc_box">
-                                <div class="desc">
-                                    <strong>문주호 교수팀 고성능 태양광 수소 생산 소자 구현</strong>
-                                    <p>공과대학 신소재공학과 문주호 교수와 건설환경공학과 김형일 교수 연구팀은 황화 안티몬
-                                        광산화전극의 미세구조를 제어 하는 동시에 전극 표면 개질 공정을 진행 한 뒤 요오드 산화
-                                        반응을 구동 시켜 태양광 기반 고효율 수소 생산 소자에 적용 하였다.
-                                    </p>
-                                </div>
+                                <p>문주호 교수팀 고성능 태양광 수소 생산 소자 구현</p>
                             </div>
                         </div>
                         <div class="swiper-slide itm itm02">
@@ -566,13 +597,7 @@
                                 <a href=""><img src="./images/main_research02.jpg" alt=""></a>
                             </div>
                             <div class="desc_box">
-                                <div class="desc">
-                                    <strong>문주호 교수팀 양자점 기반 원편광 발광 소자 구현</strong>
-                                    <p>공과대학 신소재공학과 문주호 교수 연구팀은 카이랄 페로브스카이트
-                                        재료 기반 스핀 정렬층의 물리적 구조를 제어하여 우수한
-                                        원편광 발광 효율을 보이는 스핀-발광 소자 제작에 성공했다.
-                                    </p>
-                                </div>
+                                <p>문주호 교수팀 고성능 태양광 수소 생산 소자 구현</p>
                             </div>
                         </div>
                         <div class="swiper-slide itm itm03">
@@ -580,34 +605,18 @@
                                 <a href=""><img src="./images/main_research03.jpg" alt=""></a>
                             </div>
                             <div class="desc_box">
-                                <div class="desc">
-                                    <strong>전혜영 교수팀 성층권 준격년진동 붕괴 원인 규명</strong>
-                                    <p>전혜영 교수 연구팀이 성층권 준격년진동 붕괴 원인을 규명했다.<br />
-                                        본 연구는 새로운 가설을 통해 QBO 역학의 과학적 이해를 <br />증진시켜 QBO 예측성 향상에 기여할 것이다.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide itm itm04">
-                            <div class="img_box">
-                                <a href=""><img src="./images/main_research04.jpg" alt=""></a>
-                            </div>
-                            <div class="desc_box">
-                                <div class="desc">
-                                    <strong>양재성 교수팀 고분자 네트워크의 이질성 규명</strong>
-                                    <p>미래캠퍼스 화학및의화학과 양재성 교수 연구팀은
-                                        고분자–용매 간 열역학적 상호작용에 따른 단일 고분자 사슬 형태가 나노미터 수준 구조
-                                        이질성에 미치는 영향을 단일분자 추적법을 사용하여 규명했다.
-
-                                    </p>
-                                </div>
+                                <p>문주호 교수팀 고성능 태양광 수소 생산 소자 구현</p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="arrows">
+                        <button class="prev"><img src="./images/arrow-left.svg" alt="">prev</button>
+                        <button class="next"><img src="./images/arrow-right.svg" alt="">next</button>
+                    </div>
                 </div>
-
-
             </div>
+
         </section>
 
         <section class="main_calendar default">
@@ -653,8 +662,8 @@
                     </div>
 
                     <div class="arrows">
-                        <button class="prev"><i class="xi-angle-left-thin"></i></button>
-                        <button class="next"><i class="xi-angle-right-thin"></i></button>
+                        <button class="prev"><img src="./images/arrow-left-white.svg" alt="">prev</button>
+                        <button class="next"><img src="./images/arrow-right-white.svg" alt="">next</button>
                     </div>
                 </div>
 
@@ -669,36 +678,41 @@
             </div>
 
             <div class="inner">
-                <div class="itm">
-                    <div class="video_box">
-                        <iframe src="https://www.youtube.com/embed/CCobWCufJvg"
-                            title="하늘에서 본 연세 feat.드론뷰🚁 - 연세대학교 랜선투어🛫" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-                        frameborder="0"></iframe>
+
+                <div class="archives_slide swiper">
+                    <div class="swiper-wrapper">
+                        <div class="itm swiper-slide">
+                            <div class="video_box">
+                                <iframe src="https://www.youtube.com/embed/CCobWCufJvg"
+                                    title="하늘에서 본 연세 feat.드론뷰🚁 - 연세대학교 랜선투어🛫" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+                                frameborder="0"></iframe>
+                            </div>
+                            <p>하늘에서 본 연세 feat.드론뷰<br />연세대학교 랜선투어</p>
+                        </div>
+                        <div class="itm swiper-slide">
+                            <div class="video_box">
+                                <iframe src="https://www.youtube.com/embed/VpmFrzWO2n8"
+                                    title="2020 연세대학교 공식 홍보 영상📺 - 답을 찾는 사람들, 연세" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+                                frameborder="0"></iframe>
+                            </div>
+                            <p>2023년 연세대학교 대표 홍보영상<br />
+                                답을 찾는 사람들</p>
+                        </div>
+                        <div class="itm swiper-slide">
+                            <div class="video_box">
+                                <iframe src="https://www.youtube.com/embed/Zs5r-ysML1Q"
+                                    title="🦅 연세대학교가 궁금해? for 예비 연세인🦅 Ver.연세에서 만나요" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+                                frameborder="0"></iframe>
+                            </div>
+                            <p>연세대학교가 궁금해? for 예비 연세인<br />Ver.연세에서 만나요</p>
+                        </div>
                     </div>
-                    <p>하늘에서 본 연세 feat.드론뷰<br />연세대학교 랜선투어</p>
-                </div>
-                <div class="itm">
-                    <div class="video_box">
-                        <iframe src="https://www.youtube.com/embed/VpmFrzWO2n8"
-                            title="2020 연세대학교 공식 홍보 영상📺 - 답을 찾는 사람들, 연세" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-                        frameborder="0"></iframe>
-                    </div>
-                    <p>2023년 연세대학교 대표 홍보영상<br />
-                        답을 찾는 사람들</p>
-                </div>
-                <div class="itm">
-                    <div class="video_box">
-                        <iframe src="https://www.youtube.com/embed/Zs5r-ysML1Q"
-                            title="🦅 연세대학교가 궁금해? for 예비 연세인🦅 Ver.연세에서 만나요" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-                        frameborder="0"></iframe>
-                    </div>
-                    <p>연세대학교가 궁금해? for 예비 연세인<br />Ver.연세에서 만나요</p>
                 </div>
 
             </div>
@@ -743,6 +757,12 @@
             </div>
         </div>
     </footer>
+
+    <div class="to_top">
+        <button>
+            <i class="xi-arrow-left"></i>
+        </button>
+    </div>
 
 </body>
 
